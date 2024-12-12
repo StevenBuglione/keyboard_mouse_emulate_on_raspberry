@@ -65,7 +65,7 @@ class BTKbDevice():
             "org.bluez", "/org/bluez"), "org.bluez.ProfileManager1")
         manager.RegisterProfile("/org/bluez/hci0", BTKbDevice.UUID, opts)
         print("6. Profile registered ")
-        os.system("hciconfig hci0 class 0x0025C0")
+        os.system("hciconfig hci0 class 0x002540")
 
     # read and return an sdp record from a file
     def read_sdp_service_record(self):
